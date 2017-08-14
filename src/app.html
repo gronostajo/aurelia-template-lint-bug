@@ -1,0 +1,9 @@
+<template>
+    <h1>Hello world!</h1>
+    <ul>
+        <li repeat.for="language of languages">
+            ${language.name}
+            <button type="button" disabled.bind="language.pending">choose</button>
+        </li>
+    </ul>
+</template>
